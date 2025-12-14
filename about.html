@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - AldigTech</title>
+     <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/banner.png"
+      sizes="32x32   "
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER: Copy dari index.html -->
+<!-- Ganti seluruh <header> dengan kode berikut -->
+
+ <header
+      id="navbar"
+      class="navbar-transparent fixed w-full top-0 z-50 transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- Logo dengan ikon -->
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/banner.png" alt="Logo AldigTech" />
+          <span>AldigTech</span>
+        </a>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="hamburgerBtn" class="hamburger-btn md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="about.html" class="nav-link">Tentang</a></li>
+          <li><a href="product.html" class="nav-link">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <!-- Button Hubungi Kami khusus mobile -->
+          <li class="md:hidden px-4 pt-2">
+            <a href="kontak.html" class="btn-primary block w-full text-center">
+              Hubungi Kami
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tombol CTA (Desktop) -->
+        <a href="kontak.html" class="btn-primary hidden md:block"
+          >Hubungi Kami</a
+        >
+      </nav>
+    </header>
+    <!-- KONTEN HALAMAN TENTANG -->
+   <!-- Ganti bagian <main> dengan kode berikut -->
+
+    <main class="pt-24 bg-gradient-to-br from-blue-100 to-white">
+
+    <!-- Section: Tentang Kami -->
+    <section class="py-16 bg-gradient-to-br from-blue-100 to-white">
+        <div class="container mx-auto px-4 ">
+            <h1 class="section-title mb-8">Tentang Kami</h1>
+            
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    <span class="font-semibold text-blue-600">AldigTech</span> 
+                    didirikan pada tahun 2023 di Malang, Jawa Timur. Kami hadir 
+                    untuk membantu UMKM dan bisnis kecil memiliki website profesional 
+                    dengan harga yang terjangkau.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Dengan pengalaman dalam pengembangan web, kami berkomitmen 
+                    memberikan solusi digital terbaik untuk mendukung pertumbuhan 
+                    bisnis Anda di era digital.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Section: Visi & Misi -->
+<section class="py-16 bg-gray-50 bg-gradient-to-br from-blue-50 to-white">
+    <div class="container mx-auto px-4 ">
+        <h2 class="section-title mb-12">Visi & Misi</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Card Visi -->
+            <div class="card-service text-center">
+                <div class="text-blue-600 text-3xl mb-4">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Visi</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Menjadi mitra digital terpercaya bagi UMKM Indonesia 
+                    dalam membangun kehadiran online yang profesional dan efektif.
+                </p>
+            </div>
+            
+            <!-- Card Misi -->
+            <div class="card-service text-center">
+                <div class="text-blue-600 text-3xl mb-4">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Misi</h3>
+                <ul class="text-gray-600 text-left space-y-2">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Menyediakan layanan website berkualitas</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Memberikan harga terjangkau untuk UMKM</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Mendukung pertumbuhan bisnis digital</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Letakkan setelah </section> Visi & Misi, masih di dalam <main> -->
+
+<!-- Section: Tim Kami -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="section-title mb-12">Tim Kami</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <!-- Card Tim 1 -->
+            <div class="text-center">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+                    <i class="fa-solid fa-user text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">Aldi Gunawan</h3>
+                <p class="text-blue-600 font-medium">Founder & CEO</p>
+            </div>
+            
+            <!-- Card Tim 2 -->
+            <div class="text-center">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+                    <i class="fa-solid fa-user text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">Rizky Pratama</h3>
+                <p class="text-blue-600 font-medium">Web Developer</p>
+            </div>
+            
+            <!-- Card Tim 3 -->
+            <div class="text-center">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+                    <i class="fa-solid fa-user text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">Sinta Dewi</h3>
+                <p class="text-blue-600 font-medium">UI/UX Designer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <a
+  href="https://wa.me/6281234567890?text=Halo%20AldigTech,%20saya%20ingin%20konsultasi%20pembuatan%20website."
+  class="floating-wa"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Flexbox 5 Kolom -->
+        <div class="footer-grid">
+        <div class="footer-col-1">
+    <h3 class="text-xl font-bold mb-4">AldigTech</h3>
+    <p class="text-gray-400 leading-relaxed text-sm">
+        Jasa pembuatan website profesional untuk UMKM yang ingin naik kelas di dunia digital.
+    </p>
+    <a href="kontak.html" class="btn-primary inline-block mt-4 text-sm">
+        Konsultasi Gratis
+    </a>
+</div>
+
+
+          <!-- Kolom 2: Link Cepat -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Link Cepat</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Beranda</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
+              <li><a href="produk.html" class="footer-link">Layanan</a></li>
+              <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Kontak -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Kontak</h4>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li>
+                <i class="fa-solid fa-location-dot mr-2"></i>Malang, Jawa Timur
+              </li>
+              <li>
+                <a href="https://wa.me/6281234567890" class="footer-link"
+                  ><i class="fa-solid fa-phone mr-2"></i>+62 812 3456 7890</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope mr-2"></i>hello@aldigtech.com
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Sosial Media -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-instagram text-xl mr-3"></i>Instagram
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-whatsapp text-xl mr-3"></i>WhatsApp
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-facebook text-xl mr-3"></i>Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom 5: Peta -->
+          <div class="footer-col-3">
+            <div class="map-container">
+              <iframe
+                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=aldigtech&t=p&z=20&ie=UTF8&iwloc=B&output=embed"
+                frameborder="0"
+                scrolling="no"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-6 text-center mt-8">
+          <p class="text-gray-400 text-sm">
+            &copy; 2025 AldigTech. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

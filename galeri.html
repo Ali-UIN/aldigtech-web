@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri - AldigTech</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/banner.png"
+      sizes="32x32   "
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER: Copy dari product.html -->
+    <!-- Ganti seluruh <header> dengan kode berikut -->
+
+    <header
+      id="navbar"
+      class="navbar-transparent fixed w-full top-0 z-50 transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- Logo dengan ikon -->
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/banner.png" alt="Logo AldigTech" />
+          <span>AldigTech</span>
+        </a>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="hamburgerBtn" class="hamburger-btn md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="about.html" class="nav-link">Tentang</a></li>
+          <li><a href="product.html" class="nav-link">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <!-- Button Hubungi Kami khusus mobile -->
+          <li class="md:hidden px-4 pt-2">
+            <a href="kontak.html" class="btn-primary block w-full text-center">
+              Hubungi Kami
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tombol CTA (Desktop) -->
+        <a href="kontak.html" class="btn-primary hidden md:block"
+          >Hubungi Kami</a
+        >
+      </nav>
+    </header>
+    <!-- KONTEN HALAMAN GALERI -->
+    <main class="pt-24 bg-gradient-to-br from-blue-100 to-white">
+      <section class="py-16 bg-white bg-gradient-to-br from-blue-100 to-white">
+        <div class="container mx-auto px-4">
+          <h1 class="section-title mb-4">Galeri Kami</h1>
+          <p class="text-center text-gray-600 mb-12">
+            Hasil karya website yang telah kami buat untuk klien
+          </p>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"
+          >
+            <!-- 1. Toko Online Fashion -->
+            <div
+              class="galeri-item"
+              data-title="Website Toko Online Fashion"
+              data-subtitle="E-commerce untuk UMKM Fashion"
+              data-desc="Website katalog produk lengkap dengan keranjang belanja dan tombol WhatsApp Checkout. Cocok untuk UMKM fashion yang ingin menampilkan koleksi produk secara rapi dan profesional."
+            >
+              <div class="galeri-placeholder">
+                <img src="assets/images/fashion.png" alt="fashion" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-800">
+                  Website Toko Online Fashion
+                </h3>
+                <p class="text-sm text-gray-500">
+                  Katalog produk & keranjang belanja untuk UMKM fashion.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2. Restoran & Cafe -->
+            <div
+              class="galeri-item"
+              data-title="Website Restoran & Cafe"
+              data-subtitle="Menu digital & profil usaha"
+              data-desc="Website untuk menampilkan menu, foto interior, jam operasional, serta tombol reservasi via WhatsApp. Membantu restoran dan cafe terlihat lebih kredibel di mata pelanggan."
+            >
+              <div class="galeri-placeholder">
+                <img src="assets/images/food.png" alt="food" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-800">
+                  Website Restoran & Cafe
+                </h3>
+                <p class="text-sm text-gray-500">
+                  Profil usaha, menu, dan reservasi online.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. Jasa Kreatif / Freelancer -->
+            <div
+              class="galeri-item"
+              data-title="Website Portofolio Jasa Kreatif"
+              data-subtitle="Portofolio desain & jasa kreatif"
+              data-desc="Website portofolio untuk desainer, fotografer, atau freelancer. Menampilkan hasil karya, testimoni klien, dan tombol kontak cepat agar calon klien mudah menghubungi."
+            >
+              <div class="galeri-placeholder">
+                <img src="assets/images/portofolio.png" alt="portofolio" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-800">
+                  Website Portofolio Jasa Kreatif
+                </h3>
+                <p class="text-sm text-gray-500">
+                  Portofolio online untuk menarik lebih banyak klien.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. Bimbel / Kursus -->
+            <div
+              class="galeri-item"
+              data-title="Website Bimbel & Kursus"
+              data-subtitle="Informasi program & pendaftaran"
+              data-desc="Website yang memuat informasi program belajar, jadwal kelas, biaya, dan formulir pendaftaran online. Memudahkan calon siswa mendaftar tanpa harus datang ke lokasi."
+            >
+              <div class="galeri-placeholder">
+                <img src="assets/images/bimbel.png" alt="bimbel" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-800">
+                  Website Bimbel & Kursus
+                </h3>
+                <p class="text-sm text-gray-500">
+                  Detail program, jadwal, dan form pendaftaran.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5. Klinik / Layanan Kesehatan -->
+            <div
+              class="galeri-item"
+              data-title="Website Klinik & Layanan Kesehatan"
+              data-subtitle="Profil dokter & jadwal praktik"
+              data-desc="Website profil klinik atau praktik dokter yang menampilkan layanan, profil dokter, jam praktik, serta lokasi Google Maps. Membantu pasien menemukan informasi penting dengan cepat."
+            >
+              <div class="galeri-placeholder">
+                <img src="assets/images/klinik.png" alt="klinik" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-800">
+                  Website Klinik & Layanan Kesehatan
+                </h3>
+                <p class="text-sm text-gray-500">
+                  Informasi layanan, dokter, dan lokasi klinik.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6. Landing Page Promo -->
+            <div
+              class="galeri-item"
+              data-title="Landing Page Promo Campaign"
+              data-subtitle="Halaman promosi satu halaman"
+              data-desc="Landing page fokus untuk satu promo tertentu, misalnya launching produk baru atau campaign iklan. Didesain agar pengunjung langsung tertarik dan mengisi form atau menghubungi WhatsApp."
+            >
+              <div class="galeri-placeholder">
+                <img src="assets/images/campaign.webp" alt="campaign" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-800">
+                  Landing Page Promo Campaign
+                </h3>
+                <p class="text-sm text-gray-500">
+                  Halaman khusus untuk promosi dan campaign iklan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal Detail Galeri -->
+    <div id="galeriModal" class="galeri-modal-overlay">
+      <div class="galeri-modal-content">
+        <button id="galeriModalClose" class="galeri-modal-close">
+          &times;
+        </button>
+        <div class="galeri-modal-body">
+          <!-- Tambahan: gambar di dalam modal -->
+          <div class="galeri-modal-image-wrapper">
+            <img id="galeriModalImage" src="" alt="Detail galeri" />
+          </div>
+
+          <h3 id="galeriModalTitle" class="galeri-modal-title"></h3>
+          <p id="galeriModalSubtitle" class="galeri-modal-subtitle"></p>
+          <p id="galeriModalDesc" class="galeri-modal-desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="https://wa.me/6281234567890?text=Halo%20AldigTech,%20saya%20ingin%20konsultasi%20pembuatan%20website."
+      class="floating-wa"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Flexbox 5 Kolom -->
+        <div class="footer-grid">
+          <div class="footer-col-1">
+            <h3 class="text-xl font-bold mb-4">AldigTech</h3>
+            <p class="text-gray-400 leading-relaxed text-sm">
+              Jasa pembuatan website profesional untuk UMKM yang ingin naik
+              kelas di dunia digital.
+            </p>
+            <a href="kontak.html" class="btn-primary inline-block mt-4 text-sm">
+              Konsultasi Gratis
+            </a>
+          </div>
+
+          <!-- Kolom 2: Link Cepat -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Link Cepat</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Beranda</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
+              <li><a href="produk.html" class="footer-link">Layanan</a></li>
+              <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Kontak -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Kontak</h4>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li>
+                <i class="fa-solid fa-location-dot mr-2"></i>Malang, Jawa Timur
+              </li>
+              <li>
+                <a href="https://wa.me/6281234567890" class="footer-link"
+                  ><i class="fa-solid fa-phone mr-2"></i>+62 812 3456 7890</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope mr-2"></i>hello@aldigtech.com
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Sosial Media -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-instagram text-xl mr-3"></i>Instagram
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-whatsapp text-xl mr-3"></i>WhatsApp
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-facebook text-xl mr-3"></i>Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom 5: Peta -->
+          <div class="footer-col-3">
+            <div class="map-container">
+              <iframe
+                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=aldigtech&t=p&z=20&ie=UTF8&iwloc=B&output=embed"
+                frameborder="0"
+                scrolling="no"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-6 text-center mt-8">
+          <p class="text-gray-400 text-sm">
+            &copy; 2025 AldigTech. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

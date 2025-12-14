@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aldigtech</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/banner.png"
+      sizes="32x32   "
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Letakkan tepat setelah <body> -->
+    <!-- Ganti seluruh <header> dengan kode berikut -->
+
+    <header
+      id="navbar"
+      class="navbar-transparent fixed w-full top-0 z-50 transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- Logo dengan ikon -->
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/banner.png" alt="Logo AldigTech" />
+          <span>AldigTech</span>
+        </a>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="hamburgerBtn" class="hamburger-btn md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="about.html" class="nav-link">Tentang</a></li>
+          <li><a href="product.html" class="nav-link">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <!-- Button Hubungi Kami khusus mobile -->
+          <li class="md:hidden px-4 pt-2">
+            <a href="kontak.html" class="btn-primary block w-full text-center">
+              Hubungi Kami
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tombol CTA (Desktop) -->
+        <a href="kontak.html" class="btn-primary hidden md:block"
+          >Hubungi Kami</a
+        >
+      </nav>
+    </header>
+    <!-- Letakkan setelah </header> -->
+
+    <section
+      id="hero" 
+      class="pt-24 min-h-screen flex items-center"
+    >
+      <div class="container mx-auto px-4">
+        <div class="hero-layout">
+          <!-- Kolom kiri: teks (pakai teksmu yang tadi) -->
+          <div class="hero-text max-w-2xl">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+              Solusi Digital untuk Bisnis Anda
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+              Kami membantu UMKM membangun website profesional dengan harga
+              terjangkau dan hasil maksimal.
+            </p>
+            <div class="mb-3">
+                <a href="kontak.html" class="btn-primary"> Konsultasi Gratis </a>
+            </div>
+
+            <div class="hero-badges">
+              <span class="hero-badge">Desain Modern</span>
+              <span class="hero-badge">Mobile Friendly</span>
+              <span class="hero-badge">Support UMKM</span>
+            </div>
+          </div>
+
+          <!-- Kolom kanan: kartu paket -->
+          <div class="hero-card">
+            <p class="hero-card-label">Paket Website UMKM</p>
+            <h2 class="hero-card-title">Mulai dari 3 Halaman Profesional</h2>
+            <ul class="hero-card-list">
+              <li>Beranda, Tentang, Produk & Kontak</li>
+              <li>Desain responsif & mudah dikelola</li>
+              <li>Integrasi WhatsApp & formulir kontak</li>
+            </ul>
+            <div class="hero-card-footer">
+              <span class="hero-card-price">Mulai ± Rp 500K*</span>
+              <span class="hero-card-note"
+                >*Gratis konsultasi & revisi awal</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Letakkan setelah </section> hero -->
+  <section id="seminar-promo" class="py-16 bg-gradient-to-br from-blue-100 to-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      
+      <!-- Teks promo -->
+      <div>
+        <h2 class="section-title mb-4 text-left">
+          Seminar UMKM Grow Digital
+        </h2>
+        <p class="text-gray-600 mb-4 text-sm md:text-base">
+          Ikuti seminar <strong>UMKM Grow Digital</strong> bersama AldigTech
+          untuk belajar bagaimana website bisa membantu menaikkan penjualan,
+          membangun brand, dan menjangkau pelanggan baru.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 text-sm md:text-base space-y-1">
+          <li>Tips praktis membuat website yang menarik untuk UMKM</li>
+          <li>Strategi promosi online sederhana tapi efektif</li>
+          <li>Sesi tanya jawab langsung dengan tim AldigTech</li>
+        </ul>
+      </div>
+
+      <!-- Card + tombol -->
+      <div class="hero-card">
+        <p class="hero-card-label">Event Spesial</p>
+        <h3 class="hero-card-title">UMKM Grow Digital 2025</h3>
+        <p class="hero-card-text">
+          Kuota terbatas. Daftar sekarang dan upload bukti pembayaran
+          langsung melalui form pendaftaran online.
+        </p>
+        <div class="hero-card-footer">
+          <span class="hero-card-price">Early bird tersedia</span>
+          <span class="hero-card-note">Cocok untuk pelaku UMKM pemula.</span>
+        </div>
+        <div class="mt-4">
+          <a href="seminar.html" class="btn-primary w-full block text-center">
+            Daftar Seminar Sekarang
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section id="profil" class="py-16 bg-gradient-to-br from-blue-50 to-white">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title">Mengapa Memilih Kami?</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div class="card-service">
+            <h3 class="text-xl font-semibold mb-2">Cepat dan Profesional</h3>
+            <p class="text-gray-600">
+              Website selesai dalam 7 hari kerja dengan kualitas terbaik.
+            </p>
+          </div>
+
+          <div class="card-service">
+            <h3 class="text-xl font-semibold mb-2">Harga Terjangkau</h3>
+            <p class="text-gray-600">
+              Paket harga yang ramah untuk UMKM dan bisnis kecil.
+            </p>
+          </div>
+
+          <div class="card-service">
+            <h3 class="text-xl font-semibold mb-2">Support 24/7</h3>
+            <p class="text-gray-600">
+              Tim kami siap membantu kapanpun Anda butuhkan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="layanan" class="py-16 bg-gradient-to-br from-blue-50 to-white">
+  <div class="container mx-auto px-4">
+    <h2 class="section-title">Layanan Utama Kami</h2>
+    <p class="text-center text-gray-500 mt-3 max-w-2xl mx-auto">
+      Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Semua paket sudah termasuk
+      desain responsif, optimasi kecepatan, dan konsultasi gratis.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <!-- Paket Basic -->
+      <div class="service-card">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Paket Basic</h3>
+        <p class="text-sm text-gray-500 mb-4">Cocok untuk UMKM yang baru mulai online.</p>
+        <ul class="service-list">
+          <li>3 Halaman (Beranda, Tentang, Kontak)</li>
+          <li>Desain responsif</li>
+          <li>Integrasi WhatsApp</li>
+        </ul>
+        <p class="service-price">Mulai ± Rp 500K</p>
+      </div>
+
+      <!-- Paket Standard -->
+      <div class="service-card service-card-highlight">
+        <span class="badge-popular">Paling Diminati</span>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Paket Standard</h3>
+        <p class="text-sm text-gray-500 mb-4">
+          Untuk bisnis yang ingin tampil lebih profesional.
+        </p>
+        <ul class="service-list">
+          <li>5–7 Halaman dinamis</li>
+          <li>Formulir kontak & WhatsApp</li>
+          <li>Galeri produk/portofolio</li>
+          <li>Basic SEO</li>
+        </ul>
+        <p class="service-price">Mulai ± Rp 1 Juta</p>
+      </div>
+
+      <!-- Paket Custom -->
+      <div class="service-card">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Paket Custom</h3>
+        <p class="text-sm text-gray-500 mb-4">
+          Solusi khusus sesuai kebutuhan bisnis Anda.
+        </p>
+        <ul class="service-list">
+          <li>Fitur sesuai permintaan</li>
+          <li>Integrasi sistem pihak ketiga</li>
+          <li>Support prioritas</li>
+        </ul>
+        <p class="service-price">Hubungi untuk konsultasi</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="proses" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+  <div class="container mx-auto px-4">
+    <h2 class="section-title">Proses Pengerjaan Website</h2>
+    <p class="text-center text-gray-500 mt-3 max-w-2xl mx-auto">
+      Kami punya alur kerja yang jelas, sehingga klien paham sampai di mana progres website mereka.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+      <div class="step-card">
+        <span class="step-number">1</span>
+        <h3 class="step-title">Konsultasi</h3>
+        <p class="step-text">Diskusi kebutuhan bisnis, target, dan referensi desain.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">2</span>
+        <h3 class="step-title">Desain Wireframe</h3>
+        <p class="step-text">Membuat rancangan tampilan sebelum masuk ke coding.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">3</span>
+        <h3 class="step-title">Pengembangan</h3>
+        <p class="step-text">Proses pembuatan website beserta uji coba fungsional.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">4</span>
+        <h3 class="step-title">Launching & Support</h3>
+        <p class="step-text">Website go-live + panduan penggunaan dan support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<a
+  href="https://wa.me/6281234567890?text=Halo%20AldigTech,%20saya%20ingin%20konsultasi%20pembuatan%20website."
+  class="floating-wa"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Flexbox 5 Kolom -->
+        <div class="footer-grid">
+        <div class="footer-col-1">
+    <h3 class="text-xl font-bold mb-4">AldigTech</h3>
+    <p class="text-gray-400 leading-relaxed text-sm">
+        Jasa pembuatan website profesional untuk UMKM yang ingin naik kelas di dunia digital.
+    </p>
+    <a href="kontak.html" class="btn-primary inline-block mt-4 text-sm">
+        Konsultasi Gratis
+    </a>
+</div>
+
+
+          <!-- Kolom 2: Link Cepat -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Link Cepat</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Beranda</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
+              <li><a href="produk.html" class="footer-link">Layanan</a></li>
+              <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Kontak -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Kontak</h4>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li>
+                <i class="fa-solid fa-location-dot mr-2"></i>Malang, Jawa Timur
+              </li>
+              <li>
+                <a href="https://wa.me/6281234567890" class="footer-link"
+                  ><i class="fa-solid fa-phone mr-2"></i>+62 812 3456 7890</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope mr-2"></i>hello@aldigtech.com
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Sosial Media -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-instagram text-xl mr-3"></i>Instagram
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-whatsapp text-xl mr-3"></i>WhatsApp
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-facebook text-xl mr-3"></i>Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom 5: Peta -->
+          <div class="footer-col-3">
+            <div class="map-container">
+              <iframe
+                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=aldigtech&t=p&z=20&ie=UTF8&iwloc=B&output=embed"
+                frameborder="0"
+                scrolling="no"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-6 text-center mt-8">
+          <p class="text-gray-400 text-sm">
+            &copy; 2025 AldigTech. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

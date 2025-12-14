@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk - AldigTech</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/banner.png"
+      sizes="32x32   "
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Ganti seluruh <header> dengan kode berikut -->
+
+    <header
+      id="navbar"
+      class="navbar-transparent fixed w-full top-0 z-50 transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- Logo dengan ikon -->
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/banner.png" alt="Logo AldigTech" />
+          <span>AldigTech</span>
+        </a>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="hamburgerBtn" class="hamburger-btn md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="about.html" class="nav-link">Tentang</a></li>
+          <li><a href="product.html" class="nav-link">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <!-- Button Hubungi Kami khusus mobile -->
+          <li class="md:hidden px-4 pt-2">
+            <a href="kontak.html" class="btn-primary block w-full text-center">
+              Hubungi Kami
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tombol CTA (Desktop) -->
+        <a href="kontak.html" class="btn-primary hidden md:block"
+          >Hubungi Kami</a
+        >
+      </nav>
+    </header>
+
+    <!-- KONTEN HALAMAN PRODUK -->
+    <main class="pt-24 bg-gradient-to-br from-blue-100 to-white">
+      <!-- Section: Layanan Kami -->
+      <section class="py-16 bg-gradient-to-br from-blue-100 to-white">
+        <div class="container mx-auto px-4">
+          <h1 class="section-title mb-4">Layanan Kami</h1>
+          <p class="text-center text-gray-600 mb-12">
+            Pilih paket yang sesuai dengan kebutuhan bisnis Anda
+          </p>
+
+          <!-- Tabel Layanan -->
+          <div class="max-w-4xl mx-auto overflow-x-auto">
+            <table class="service-table">
+              <thead>
+                <tr>
+                  <th>Layanan</th>
+                  <th>Deskripsi</th>
+                  <th>Harga</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-semibold">Paket Basic</td>
+                  <td>
+                    Website 1–3 halaman, desain simpel, responsif, cocok untuk
+                    profil usaha sederhana.
+                  </td>
+                  <td class="text-blue-600 font-bold">Rp 500.000</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Paket Standard</td>
+                  <td>
+                    Website 5–7 halaman, desain lebih custom, sudah termasuk
+                    optimasi SEO dasar.
+                  </td>
+                  <td class="text-blue-600 font-bold">Rp 1.500.000</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Paket Premium</td>
+                  <td>
+                    Website hingga unlimited halaman, fitur lengkap, dan
+                    maintenance 1 bulan.
+                  </td>
+                  <td class="text-blue-600 font-bold">Rp 3.000.000</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Landing Page Promo</td>
+                  <td>
+                    Halaman promosi tunggal untuk campaign iklan atau launching
+                    produk.
+                  </td>
+                  <td class="text-blue-600 font-bold">Rp 750.000</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Paket Toko Online</td>
+                  <td>
+                    Website katalog produk dengan keranjang belanja dan tombol
+                    WhatsApp Checkout.
+                  </td>
+                  <td class="text-blue-600 font-bold">Rp 2.000.000</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Paket Maintenance</td>
+                  <td>
+                    Jasa perawatan website (update konten ringan & monitoring)
+                    selama 3 bulan.
+                  </td>
+                  <td class="text-blue-600 font-bold">Rp 600.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class="section-title mb-4 text-left">
+            Rekomendasi Website Berdasarkan Usia Pelanggan
+          </h2>
+          <p class="text-gray-600 text-sm md:text-base mb-8">
+            Fitur ini membantu Anda menentukan jenis tampilan dan konten website
+            berdasarkan <strong>rentang usia mayoritas pelanggan</strong>.
+            Masukkan usia rata-rata pelanggan Anda, lalu lihat rekomendasinya.
+          </p>
+          <div class="usia-card bg-gradient-to-br from-blue-100 to-white p-6 rounded-2xl shadow-sm">
+            <label
+              for="usiaPelanggan"
+              class="form-label block mb-2 font-medium"
+            >
+              Usia rata-rata pelanggan (dalam tahun)
+            </label>
+
+            <div class="flex flex-col md:flex-row gap-3">
+              <div class="flex-1">
+                <input
+                  type="number"
+                  id="usiaPelanggan"
+                  min="0"
+                  max="120"
+                  class="form-input w-full"
+                  placeholder="Contoh: 25"
+                />
+              </div>
+              <div class="md:w-auto">
+                <button
+                  type="button"
+                  id="btnRekomendasiUsia"
+                  class="btn-primary w-full md:w-auto h-full"
+                >
+                  Lihat Rekomendasi
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-1 text-red-500 text-sm min-h-[20px]">
+              <span class="error-message" id="usiaError"></span>
+            </div>
+
+            <div
+              id="usiaResult"
+              class="usia-result mt-0 pt-3 border-t border-gray-200 hidden"
+            >
+              <p class="usia-result-title font-bold text-gray-800">
+                Kategori Usia:
+                <span id="usiaKategori" class="text-blue-600"></span>
+              </p>
+              <p
+                class="usia-result-text text-gray-600 mt-1"
+                id="usiaRekomendasi"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cartSection" class="py-16 bg-gradient-to-br from-blue-100 to-white">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <h2 class="section-title mb-4 text-left">
+      Simulasi Pemesanan Paket Website
+    </h2>
+    <p class="text-gray-600 text-sm md:text-base mb-6">
+      Pilih paket website yang Anda inginkan, tambahkan ke keranjang,
+      lalu lihat total biayanya secara otomatis.
+    </p>
+
+    <!-- Daftar paket yang bisa dipilih -->
+   <div class="grid md:grid-cols-3 gap-6 mb-10 cart-grid">
+
+      <!-- Paket Basic -->
+      <div class="cart-product bg-white rounded-xl shadow-sm p-4"
+           data-name="Paket Basic"
+           data-price="500000">
+        <h3 class="font-semibold text-gray-800 mb-1">Paket Basic</h3>
+        <p class="text-xs text-gray-500 mb-3">
+          1–3 halaman, cocok untuk profil usaha sederhana.
+        </p>
+        <p class="text-sm font-semibold text-blue-600 mb-3">
+          Rp 500.000
+        </p>
+        <button class="btn-primary w-full btn-add-cart">
+          Tambah ke Keranjang
+        </button>
+      </div>
+
+      <!-- Paket Standard -->
+      <div class="cart-product bg-white rounded-xl shadow-sm p-4"
+           data-name="Paket Standard"
+           data-price="1500000">
+        <h3 class="font-semibold text-gray-800 mb-1">Paket Standard</h3>
+        <p class="text-xs text-gray-500 mb-3">
+          5–7 halaman dengan desain lebih custom dan SEO dasar.
+        </p>
+        <p class="text-sm font-semibold text-blue-600 mb-3">
+          Rp 1.500.000
+        </p>
+        <button class="btn-primary w-full btn-add-cart">
+          Tambah ke Keranjang
+        </button>
+      </div>
+
+      <!-- Paket Premium -->
+      <div class="cart-product bg-white rounded-xl shadow-sm p-4"
+           data-name="Paket Premium"
+           data-price="3000000">
+        <h3 class="font-semibold text-gray-800 mb-1">Paket Premium</h3>
+        <p class="text-xs text-gray-500 mb-3">
+          Paket lengkap dengan maintenance 1 bulan.
+        </p>
+        <p class="text-sm font-semibold text-blue-600 mb-3">
+          Rp 3.000.000
+        </p>
+        <button class="btn-primary w-full btn-add-cart">
+          Tambah ke Keranjang
+        </button>
+      </div>
+    </div>
+
+    <!-- Keranjang belanja -->
+    <div class="bg-white p-6 rounded-2xl shadow-sm">
+      <h3 class="text-lg font-semibold mb-4">Keranjang Belanja</h3>
+
+      <div class="overflow-x-auto">
+        <table class="cart-table w-full text-sm">
+          <thead>
+            <tr class="text-left text-gray-500">
+              <th class="py-2 pr-2">Paket</th>
+              <th class="py-2 pr-2">Harga</th>
+              <th class="py-2 pr-2">Qty</th>
+              <th class="py-2 pr-2">Subtotal</th>
+              <th class="py-2 pr-2"></th>
+            </tr>
+          </thead>
+          <tbody id="cartItems">
+            <tr>
+              <td colspan="5" class="text-center text-gray-400 py-4">
+                Keranjang masih kosong.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          <span class="font-semibold text-gray-700">Total:</span>
+          <span id="cartTotal" class="text-blue-600 font-bold">Rp 0</span>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-3 md:items-center">
+          <input
+            type="text"
+            id="cartCustomerName"
+            class="form-input md:w-64"
+            placeholder="Nama pemesan"
+          />
+          <button type="button" id="btnCheckout" class="btn-primary md:w-auto">
+            Bayar Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="py-16 bg-gradient-to-br from-blue-50 to-white">
+        <div class="container mx-auto px-4 max-w-5xl">
+          <h2 class="section-title mb-4 text-left">
+            Proses Kolaborasi dengan Klien
+          </h2>
+          <p class="text-gray-600 mb-6 text-sm md:text-base">
+            Kami tidak hanya membuat website, tapi juga berdiskusi, memberi
+            saran, dan membantu UMKM memahami cara memanfaatkan website untuk
+            bertumbuh.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <video controls class="w-full rounded-xl shadow-md">
+              <source
+                src="assets/video/Permintaan_Video_Pertemuan_UMKM_AldigTech.mp4"
+                type="video/mp4"
+              />
+              Browser Anda tidak mendukung video.
+            </video>
+
+            <video controls class="w-full rounded-xl shadow-md">
+              <source
+                src="assets/video/Video_Pertemuan_UMKM_AldigTech.mp4"
+                type="video/mp4"
+              />
+              Browser Anda tidak mendukung video.
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="testimoni" class="py-16 bg-white">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <h2 class="section-title mb-4 text-left">Testimoni Pelanggan</h2>
+    <p class="text-gray-600 text-sm md:text-base mb-8">
+      Beberapa UMKM yang telah bekerja sama dengan AldigTech dan merasakan manfaat
+      memiliki website profesional untuk bisnis mereka.
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-gradient-to-br from-blue-200 to-blue-300 p-6 rounded-2xl shadow-sm">
+      <!-- 1 -->
+      <div class="review-card">
+        <div class="review-stars" aria-label="Rating 5 dari 5">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-text">
+          Setelah punya website, pelanggan jadi lebih mudah melihat katalog kue dan
+          langsung order lewat WhatsApp. Tampilan simpel tapi terlihat profesional.
+        </p>
+        <p class="review-name">Rina – Toko Kue Rumahan</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="review-card">
+        <div class="review-stars" aria-label="Rating 4 dari 5">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p class="review-text">
+          Website bimbel kami sekarang jadi pusat informasi jadwal, program, dan pendaftaran.
+          Orang tua bisa langsung daftar tanpa harus datang ke lokasi.
+        </p>
+        <p class="review-name">Fajar – Bimbel Cerdas Mulia</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="review-card bg">
+        <div class="review-stars" aria-label="Rating 5 dari 5">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-text">
+          Tim AldigTech banyak membantu memberi insight tentang konten
+          yang cocok untuk target anak muda. Website terasa modern dan mobile friendly.
+        </p>
+        <p class="review-name">Dila – Studio Desain Kreatif</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="review-card">
+        <div class="review-stars" aria-label="Rating 4 dari 5">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p class="review-text">
+          Website klinik kami sekarang menampilkan jadwal dokter dan lokasi dengan jelas.
+          Pasien sering bilang lebih mudah menemukan informasi sebelum berkunjung.
+        </p>
+        <p class="review-name">dr. Andi – Klinik Sehat Sentosa</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="review-card">
+        <div class="review-stars" aria-label="Rating 5 dari 5">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-text">
+          Saya jadi lebih percaya diri kirim link website ke calon mitra.
+          Profil usaha tertata rapi dan ada portofolio proyek yang bisa dilihat kapan saja.
+        </p>
+        <p class="review-name">Budi – Jasa Kontraktor Rumah</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="review-card">
+        <div class="review-stars" aria-label="Rating 4 dari 5">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p class="review-text">
+          Proses pembuatan website jelas step by step. Saya dibimbing dari penentuan
+          konten sampai cara update sendiri, jadi tidak tergantung ke developer.
+        </p>
+        <p class="review-name">Sari – UMKM Fashion Muslimah</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <a
+      href="https://wa.me/6281234567890?text=Halo%20AldigTech,%20saya%20ingin%20konsultasi%20pembuatan%20website."
+      class="floating-wa"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Flexbox 5 Kolom -->
+        <div class="footer-grid">
+          <div class="footer-col-1">
+            <h3 class="text-xl font-bold mb-4">AldigTech</h3>
+            <p class="text-gray-400 leading-relaxed text-sm">
+              Jasa pembuatan website profesional untuk UMKM yang ingin naik
+              kelas di dunia digital.
+            </p>
+            <a href="kontak.html" class="btn-primary inline-block mt-4 text-sm">
+              Konsultasi Gratis
+            </a>
+          </div>
+
+          <!-- Kolom 2: Link Cepat -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Link Cepat</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Beranda</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
+              <li><a href="produk.html" class="footer-link">Layanan</a></li>
+              <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Kontak -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Kontak</h4>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li>
+                <i class="fa-solid fa-location-dot mr-2"></i>Malang, Jawa Timur
+              </li>
+              <li>
+                <a href="https://wa.me/6281234567890" class="footer-link"
+                  ><i class="fa-solid fa-phone mr-2"></i>+62 812 3456 7890</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope mr-2"></i>hello@aldigtech.com
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Sosial Media -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-instagram text-xl mr-3"></i>Instagram
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-whatsapp text-xl mr-3"></i>WhatsApp
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-facebook text-xl mr-3"></i>Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom 5: Peta -->
+          <div class="footer-col-3">
+            <div class="map-container">
+              <iframe
+                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=aldigtech&t=p&z=20&ie=UTF8&iwloc=B&output=embed"
+                frameborder="0"
+                scrolling="no"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-6 text-center mt-8">
+          <p class="text-gray-400 text-sm">
+            &copy; 2025 AldigTech. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

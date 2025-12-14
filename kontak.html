@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - AldigTech</title>
+     <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/banner.png"
+      sizes="32x32   "
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ganti seluruh <header> dengan kode berikut -->
+
+ <header
+      id="navbar"
+      class="navbar-transparent fixed w-full top-0 z-50 transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- Logo dengan ikon -->
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/banner.png" alt="Logo AldigTech" />
+          <span>AldigTech</span>
+        </a>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="hamburgerBtn" class="hamburger-btn md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="about.html" class="nav-link">Tentang</a></li>
+          <li><a href="product.html" class="nav-link">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <!-- Button Hubungi Kami khusus mobile -->
+          <li class="md:hidden px-4 pt-2">
+            <a href="kontak.html" class="btn-primary block w-full text-center">
+              Hubungi Kami
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tombol CTA (Desktop) -->
+        <a href="kontak.html" class="btn-primary hidden md:block"
+          >Hubungi Kami</a
+        >
+      </nav>
+    </header>
+
+    <!-- KONTEN HALAMAN KONTAK -->
+    <main class="pt-24 bg-gradient-to-br from-blue-100 to-white">
+        <section class="py-16 bg-gradient-to-br from-blue-100 to-white">
+            <div class="container mx-auto px-4">
+                <h1 class="section-title mb-4">Hubungi Kami</h1>
+                <p class="text-center text-gray-600 mb-12">
+                    Punya pertanyaan? Silakan isi form di bawah ini
+                </p>
+                
+                <!-- Form Kontak -->
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
+                    <!-- Ganti bagian <form> di kontak.html dengan kode berikut -->
+
+<form id="contactForm">
+    <!-- Nama -->
+    <div class="mb-6">
+        <label for="nama" class="form-label">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" class="form-input" placeholder="Masukkan nama Anda">
+        <span class="error-message" id="namaError"></span>
+    </div>
+    
+    <!-- Email -->
+    <div class="mb-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="Masukkan email Gmail Anda">
+        <span class="error-message" id="emailError"></span>
+    </div>
+    
+    <!-- No HP -->
+    <div class="mb-6">
+        <label for="nohp" class="form-label">No HP</label>
+        <input type="tel" id="nohp" name="nohp" class="form-input" placeholder="Contoh: 081234567890">
+        <span class="error-message" id="nohpError"></span>
+    </div>
+    
+    <!-- Kategori -->
+    <div class="mb-6">
+        <label for="kategori" class="form-label">Kategori</label>
+        <select id="kategori" name="kategori" class="form-input">
+            <option value="">-- Pilih Kategori --</option>
+            <option value="konsultasi">Konsultasi</option>
+            <option value="pemesanan">Pemesanan</option>
+            <option value="komplain">Komplain</option>
+            <option value="lainnya">Lainnya</option>
+        </select>
+        <span class="error-message" id="kategoriError"></span>
+    </div>
+    
+    <!-- Pesan -->
+    <div class="mb-6">
+        <label for="pesan" class="form-label">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" class="form-input" placeholder="Tulis pesan Anda"></textarea>
+        <span class="error-message" id="pesanError"></span>
+    </div>
+    <!-- Langganan email promosi -->
+<div class="mb-4 flex items-start gap-2">
+    <input type="checkbox" id="promosiEmail" class="mt-1">
+    <label for="promosiEmail" class="text-sm text-gray-700">
+        Saya ingin berlangganan email promosi AldigTech.
+    </label>
+</div>
+    <!-- Tombol -->
+    <div class="flex gap-4">
+        <button type="button" id="resetBtn" class="btn-reset">Reset</button>
+        <button type="submit" class="btn-primary flex-1">Kirim Pesan</button>
+    </div>
+</form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <a
+  href="https://wa.me/6281234567890?text=Halo%20AldigTech,%20saya%20ingin%20konsultasi%20pembuatan%20website."
+  class="floating-wa"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Flexbox 5 Kolom -->
+        <div class="footer-grid">
+        <div class="footer-col-1">
+    <h3 class="text-xl font-bold mb-4">AldigTech</h3>
+    <p class="text-gray-400 leading-relaxed text-sm">
+        Jasa pembuatan website profesional untuk UMKM yang ingin naik kelas di dunia digital.
+    </p>
+    <a href="kontak.html" class="btn-primary inline-block mt-4 text-sm">
+        Konsultasi Gratis
+    </a>
+</div>
+
+
+          <!-- Kolom 2: Link Cepat -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Link Cepat</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Beranda</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
+              <li><a href="produk.html" class="footer-link">Layanan</a></li>
+              <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Kontak -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Kontak</h4>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li>
+                <i class="fa-solid fa-location-dot mr-2"></i>Malang, Jawa Timur
+              </li>
+              <li>
+                <a href="https://wa.me/6281234567890" class="footer-link"
+                  ><i class="fa-solid fa-phone mr-2"></i>+62 812 3456 7890</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope mr-2"></i>hello@aldigtech.com
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Sosial Media -->
+          <div class="footer-col-2">
+            <h4 class="text-xl font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex flex-col space-y-3">
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-instagram text-xl mr-3"></i>Instagram
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-whatsapp text-xl mr-3"></i>WhatsApp
+              </a>
+              <a href="#" class="footer-link flex items-center">
+                <i class="fa-brands fa-facebook text-xl mr-3"></i>Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom 5: Peta -->
+          <div class="footer-col-3">
+            <div class="map-container">
+              <iframe
+                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=aldigtech&t=p&z=20&ie=UTF8&iwloc=B&output=embed"
+                frameborder="0"
+                scrolling="no"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-6 text-center mt-8">
+          <p class="text-gray-400 text-sm">
+            &copy; 2025 AldigTech. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
