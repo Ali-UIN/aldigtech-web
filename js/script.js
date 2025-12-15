@@ -1,3 +1,7 @@
+function isValidGmail(email) {
+  return /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(email);
+}
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
